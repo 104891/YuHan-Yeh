@@ -4,7 +4,7 @@
 
 <head>
 
-    <title>Trivia - Study Tracking for Students</title>
+    <title>Weekly Study Calculator</title>
 
     <link rel="stylesheet" href="style.css">
 
@@ -16,8 +16,6 @@
 
 <table border="1" width="800" align="center">
 
-    <!-- Header -->
-
     <tr>
 
         <th colspan="3" class="header">
@@ -28,33 +26,29 @@
 
     </tr>
 
-
-    <!-- Navigation -->
-
     <tr class="nav">
 
-        <td colspan="3" align="center">
+        <th colspan="3">
 
             <h2>
 
-                <a href="index.html">HOME</a> |
+                <a href="index.html">HOME</a>
 
-                <a href="portfolio.html">PORTFOLIO</a> |
+                |
+
+                <a href="portfolio.html">PORTFOLIO</a>
+
+                |
 
                 <a href="trivia.html">TRIVIA</a>
 
             </h2>
 
-        </td>
+        </th>
 
     </tr>
 
-
-    <!-- Main Content -->
-
     <tr class="content">
-
-        <!-- Left Side -->
 
         <td width="180" valign="top">
 
@@ -63,52 +57,56 @@
             <ul>
 
                 <li>
-
                     <a href="https://www.ritsumei.ac.jp/" target="_blank">
-
                         Ritsumeikan University
-
                     </a>
-
                 </li>
 
                 <li>
-
                     <a href="https://scholar.google.com/" target="_blank">
-
                         Google Scholar
-
                     </a>
-
                 </li>
 
                 <li>
-
                     <a href="https://github.com/" target="_blank">
-
                         GitHub
-
                     </a>
-
                 </li>
 
             </ul>
 
         </td>
 
-
-        <!-- Middle Section -->
-
         <td width="440" valign="top">
 
             <h2>Weekly Study Calculator</h2>
 
             <p>
+                Enter your weekly goals, study hours, and lunch expenses.
+            </p>
 
-                Enter your study hours and lunch expenses for each day.
+            <h3>Weekly Goals</h3>
+
+            <p>
+
+                Weekly Study Goal:
+
+                <input type="number" id="studyGoal">
+
+                hours
 
             </p>
 
+            <p>
+
+                Maximum Weekly Lunch Budget:
+
+                <input type="number" id="lunchBudget">
+
+                yen
+
+            </p>
 
             <table border="1" width="100%">
 
@@ -121,7 +119,6 @@
                     <th>Lunch Expense</th>
 
                 </tr>
-
 
                 <tr>
 
@@ -137,7 +134,6 @@
 
                 </tr>
 
-
                 <tr>
 
                     <td>Tuesday</td>
@@ -151,7 +147,6 @@
                     </td>
 
                 </tr>
-
 
                 <tr>
 
@@ -167,7 +162,6 @@
 
                 </tr>
 
-
                 <tr>
 
                     <td>Thursday</td>
@@ -181,7 +175,6 @@
                     </td>
 
                 </tr>
-
 
                 <tr>
 
@@ -197,7 +190,6 @@
 
                 </tr>
 
-
                 <tr>
 
                     <td>Saturday</td>
@@ -211,7 +203,6 @@
                     </td>
 
                 </tr>
-
 
                 <tr>
 
@@ -229,105 +220,67 @@
 
             </table>
 
-
             <br>
 
-
-            <button type="button" onclick="calculateResult()">
-
+            <button onclick="calculateResult()">
                 Calculate
-
             </button>
 
-
-            <button type="button" onclick="clearResult()">
-
+            <button onclick="clearResult()">
                 Clear
-
             </button>
-
 
             <h2>Calculation Result</h2>
 
-
             <p>
-
                 Total Study Hours:
-
                 <span id="totalStudyHours">0</span>
-
             </p>
 
-
             <p>
-
                 Average Study Hours:
-
                 <span id="averageStudyHours">0</span>
-
             </p>
 
-
             <p>
-
                 Total Lunch Expense:
-
                 <span id="totalLunchExpense">0</span>
-
             </p>
-
 
             <p>
-
                 Average Lunch Expense:
-
                 <span id="averageLunchExpense">0</span>
-
             </p>
 
+            <p id="studyMessage"></p>
 
-            <p id="studyMessage">
-
-            </p>
-
-
-            <p id="lunchMessage">
-
-            </p>
+            <p id="lunchMessage"></p>
 
         </td>
-
-
-        <!-- Right Side -->
 
         <td width="180" valign="top">
 
             <h2>Instructions</h2>
 
             <p>
-
-                Enter your study hours and lunch expense for all seven days.
-
+                Enter your weekly study goal and maximum lunch budget.
             </p>
 
             <p>
-
-                Click Calculate to see your weekly total and daily average.
-
+                Enter your study hours and lunch expenses for all seven days.
             </p>
 
             <p>
+                Click Calculate to see your weekly total, daily average, and goal results.
+            </p>
 
+            <p>
                 Click Clear to remove all information.
-
             </p>
 
         </td>
 
     </tr>
-
-
-    <!-- Footer -->
 
     <tr>
 
