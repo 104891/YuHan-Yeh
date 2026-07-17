@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Trivia - Study Tracking for Students</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+
+<table border="1" width="800" align="center">
+
+    <!-- Header -->
+
+    <tr>
+
+        <th colspan="3" class="header">
+
+            <h1>Study Tracking for Students</h1>
+
+        </th>
+
+    </tr>
+
+
+    <!-- Navigation -->
+
+    <tr class="nav">
+
+        <td colspan="3" align="center">
+
+            <h2>
+
+                <a href="index.html">HOME</a> |
+
+                <a href="portfolio.html">PORTFOLIO</a> |
+
+                <a href="trivia.html">TRIVIA</a>
+
+            </h2>
+
+        </td>
+
+    </tr>
+
+
+    <!-- Main Content -->
+
+    <tr class="content">
+
+        <!-- Left Side -->
+
+        <td width="180" valign="top">
+
+            <h2>Useful Links</h2>
+
+            <ul>
+
+                <li>
+
+                    <a href="https://www.ritsumei.ac.jp/" target="_blank">
+
+                        Ritsumeikan University
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="https://scholar.google.com/" target="_blank">
+
+                        Google Scholar
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="https://github.com/" target="_blank">
+
+                        GitHub
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </td>
+
+
+        <!-- Middle Section -->
+
+        <td width="440" valign="top">
+
+            <h2>Weekly Study Calculator</h2>
+
+            <p>
+
+                Enter your study hours and lunch expenses for each day.
+
+            </p>
+
+
+            <table border="1" width="100%">
+
+                <tr>
+
+                    <th>Day</th>
+
+                    <th>Study Hours</th>
+
+                    <th>Lunch Expense</th>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>Monday</td>
+
+                    <td>
+                        <input type="number" id="mondayHours">
+                    </td>
+
+                    <td>
+                        <input type="number" id="mondayLunch">
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>Tuesday</td>
+
+                    <td>
+                        <input type="number" id="tuesdayHours">
+                    </td>
+
+                    <td>
+                        <input type="number" id="tuesdayLunch">
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>Wednesday</td>
+
+                    <td>
+                        <input type="number" id="wednesdayHours">
+                    </td>
+
+                    <td>
+                        <input type="number" id="wednesdayLunch">
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>Thursday</td>
+
+                    <td>
+                        <input type="number" id="thursdayHours">
+                    </td>
+
+                    <td>
+                        <input type="number" id="thursdayLunch">
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>Friday</td>
+
+                    <td>
+                        <input type="number" id="fridayHours">
+                    </td>
+
+                    <td>
+                        <input type="number" id="fridayLunch">
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>Saturday</td>
+
+                    <td>
+                        <input type="number" id="saturdayHours">
+                    </td>
+
+                    <td>
+                        <input type="number" id="saturdayLunch">
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>Sunday</td>
+
+                    <td>
+                        <input type="number" id="sundayHours">
+                    </td>
+
+                    <td>
+                        <input type="number" id="sundayLunch">
+                    </td>
+
+                </tr>
+
+            </table>
+
+
+            <br>
+
+
+            <button type="button" onclick="calculateResult()">
+
+                Calculate
+
+            </button>
+
+
+            <button type="button" onclick="clearResult()">
+
+                Clear
+
+            </button>
+
+
+            <h2>Calculation Result</h2>
+
+
+            <p>
+
+                Total Study Hours:
+
+                <span id="totalStudyHours">0</span>
+
+            </p>
+
+
+            <p>
+
+                Average Study Hours:
+
+                <span id="averageStudyHours">0</span>
+
+            </p>
+
+
+            <p>
+
+                Total Lunch Expense:
+
+                <span id="totalLunchExpense">0</span>
+
+            </p>
+
+
+            <p>
+
+                Average Lunch Expense:
+
+                <span id="averageLunchExpense">0</span>
+
+            </p>
+
+
+            <p id="studyMessage">
+
+            </p>
+
+
+            <p id="lunchMessage">
+
+            </p>
+
+        </td>
+
+
+        <!-- Right Side -->
+
+        <td width="180" valign="top">
+
+            <h2>Instructions</h2>
+
+            <p>
+
+                Enter your study hours and lunch expense for all seven days.
+
+            </p>
+
+            <p>
+
+                Click Calculate to see your weekly total and daily average.
+
+            </p>
+
+            <p>
+
+                Click Clear to remove all information.
+
+            </p>
+
+        </td>
+
+    </tr>
+
+
+    <!-- Footer -->
+
+    <tr>
+
+        <th colspan="3" class="footer">
+
+            <h2>Study Tracking for Students</h2>
+
+        </th>
+
+    </tr>
+
+</table>
+
+</body>
+
+</html>

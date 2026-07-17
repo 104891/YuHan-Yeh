@@ -1,84 +1,215 @@
 <!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Study Tracking for Students</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
 <table border="1" width="800" align="center">
-  <tr>
-    <th colspan="3" bgcolor="green">
-      <h1 style="color:white;">Restaurants Near Ritsumeikan OIC</h1>
-    </th>
-  </tr>
 
-  <tr bgcolor="#d8ead8">
-    <td colspan="3" align="center">
-      <h2>
-        <a href="#home">HOME</a> |
-        <a href="#restaurants">RESTAURANTS</a> |
-        <a href="#contact">CONTACT</a>
-      </h2>
-    </td>
-  </tr>
+    <!-- Header -->
 
-  
-  <tr bgcolor="#FFF8DC" height="300">
-    <td width="260" valign="top">
-      <h2 id="restaurants">Useful Links</h2>
-      <ul>
-        <li>
-          <a href="https://www.mcdonalds.co.jp/" target="_blank">
-            McDonald's Japan
-          </a>
-        </li>
-        <li>
-          <a href="https://www.kfc.co.jp/" target="_blank">
-            KFC Japan
-          </a>
-        </li>
-        <li>
-          <a href="https://jp.marugame.com/" target="_blank">
-            Marugame Udon
-          </a>
-        </li>
-      </ul>
-    </td>
+    <tr>
 
-    <td width="280" valign="top">
-      <h2>About This Page</h2>
-      <p>
-        This webpage introduces three restaurants near school.
-        They are useful when students want to eat quickly bduring lunchtime or after school.
-      </p>
+        <th colspan="3" class="header">
 
-      <p>
-        McDonald's is good for quick meals like fries.
-        KFC is good for fried chicken.
-        Marugame Udon is good for udon of course.
-      </p>
-    </td>
+            <h1>Study Tracking for Students</h1>
 
-    <td width="260" valign="top">
-      <h2 id="contact">Contact Me</h2>
+        </th>
 
-      <form>
-        <label>Name:</label><br>
-        <input type="text" name="name"><br><br>
+    </tr>
 
-        <label>Email:</label><br>
-        <input type="email" name="email"><br><br>
+    <!-- Navigation -->
 
-        <label>Favorite restaurant:</label><br>
-        <input type="radio" name="restaurant" value="mcdonalds"> McDonald's<br>
-        <input type="radio" name="restaurant" value="kfc"> KFC<br>
-        <input type="radio" name="restaurant" value="marugame"> Marugame Udon<br><br>
+    <tr class="nav">
 
-        <label>Message:</label><br>
-        <textarea name="message" rows="4" cols="22"></textarea><br><br>
+        <td colspan="3" align="center">
 
-        <button type="submit">Send</button>
-      </form>
-    </td>
-  </tr>
+            <h2>
 
-  <tr>
-    <th colspan="3" bgcolor="green">
-      <h2 style="color:white;">FOOTER</h2>
-    </th>
-  </tr>
+                <a href="index.html">HOME</a> |
+
+                <a href="portfolio.html">PORTFOLIO</a> |
+
+                <a href="trivia.html">TRIVIA</a>
+
+            </h2>
+
+        </td>
+
+    </tr>
+
+    <!-- Content -->
+
+    <tr class="content" height="300">
+
+        <!-- Left -->
+
+        <td width="260" valign="top">
+
+            <h2>Useful Links</h2>
+
+            <ul>
+
+                <li>
+
+                    <a href="https://www.ritsumei.ac.jp/" target="_blank">
+
+                        Ritsumeikan University
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="https://scholar.google.com/" target="_blank">
+
+                        Google Scholar
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="https://github.com/" target="_blank">
+
+                        GitHub
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </td>
+
+        <!-- Middle -->
+
+        <td width="280" valign="top">
+
+            <h2>About This Website</h2>
+
+            <p>
+
+                This website helps university students track their weekly study time and lunch expenses.
+
+            </p>
+
+            <p>
+
+                Students can record:
+
+            </p>
+
+            <ul>
+
+                <li>Study Subject</li>
+
+                <li>Study Hours</li>
+
+                <li>Lunch Expense</li>
+
+                <li>Study Location</li>
+
+            </ul>
+
+            <p>
+
+                Go to the Portfolio page to enter your weekly records.
+
+            </p>
+
+            <p>
+
+                Go to the Trivia page to calculate the total study hours and lunch expenses.
+
+            </p>
+
+        </td>
+
+        <!-- Right -->
+
+        <td width="260" valign="top">
+
+            <h2>Contact Me</h2>
+
+            <form>
+
+                <label>Name:</label>
+
+                <br>
+
+                <input type="text" name="name">
+
+                <br><br>
+
+                <label>Email:</label>
+
+                <br>
+
+                <input type="email" name="email">
+
+                <br><br>
+
+                <label>University Year:</label>
+
+                <br>
+
+                <input type="radio" name="year" value="year1"> Year 1
+
+                <br>
+
+                <input type="radio" name="year" value="year2"> Year 2
+
+                <br>
+
+                <input type="radio" name="year" value="year3"> Year 3
+
+                <br>
+
+                <input type="radio" name="year" value="year4"> Year 4
+
+                <br><br>
+
+                <label>Message:</label>
+
+                <br>
+
+                <textarea name="message" rows="4" cols="22"></textarea>
+
+                <br><br>
+
+                <button type="submit">Send</button>
+
+            </form>
+
+        </td>
+
+    </tr>
+
+    <!-- Footer -->
+
+    <tr>
+
+        <th colspan="3" class="footer">
+
+            <h2>Study Tracking for Students</h2>
+
+        </th>
+
+    </tr>
+
 </table>
+
+</body>
+
+</html>
