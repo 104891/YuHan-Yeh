@@ -1,39 +1,52 @@
 function calculateResult(){
 
-    var studyGoal = Number(document.querySelector("#studyGoal").value);
+    var studyGoal =
+        Number(document.querySelector("#studyGoal").value);
 
-    var lunchBudget = Number(document.querySelector("#lunchBudget").value);
+    var lunchBudget =
+        Number(document.querySelector("#lunchBudget").value);
 
+    var mondayHours =
+        Number(document.querySelector("#mondayHours").value);
 
-    var mondayHours = Number(document.querySelector("#mondayHours").value);
+    var tuesdayHours =
+        Number(document.querySelector("#tuesdayHours").value);
 
-    var tuesdayHours = Number(document.querySelector("#tuesdayHours").value);
+    var wednesdayHours =
+        Number(document.querySelector("#wednesdayHours").value);
 
-    var wednesdayHours = Number(document.querySelector("#wednesdayHours").value);
+    var thursdayHours =
+        Number(document.querySelector("#thursdayHours").value);
 
-    var thursdayHours = Number(document.querySelector("#thursdayHours").value);
+    var fridayHours =
+        Number(document.querySelector("#fridayHours").value);
 
-    var fridayHours = Number(document.querySelector("#fridayHours").value);
+    var saturdayHours =
+        Number(document.querySelector("#saturdayHours").value);
 
-    var saturdayHours = Number(document.querySelector("#saturdayHours").value);
+    var sundayHours =
+        Number(document.querySelector("#sundayHours").value);
 
-    var sundayHours = Number(document.querySelector("#sundayHours").value);
+    var mondayLunch =
+        Number(document.querySelector("#mondayLunch").value);
 
+    var tuesdayLunch =
+        Number(document.querySelector("#tuesdayLunch").value);
 
-    var mondayLunch = Number(document.querySelector("#mondayLunch").value);
+    var wednesdayLunch =
+        Number(document.querySelector("#wednesdayLunch").value);
 
-    var tuesdayLunch = Number(document.querySelector("#tuesdayLunch").value);
+    var thursdayLunch =
+        Number(document.querySelector("#thursdayLunch").value);
 
-    var wednesdayLunch = Number(document.querySelector("#wednesdayLunch").value);
+    var fridayLunch =
+        Number(document.querySelector("#fridayLunch").value);
 
-    var thursdayLunch = Number(document.querySelector("#thursdayLunch").value);
+    var saturdayLunch =
+        Number(document.querySelector("#saturdayLunch").value);
 
-    var fridayLunch = Number(document.querySelector("#fridayLunch").value);
-
-    var saturdayLunch = Number(document.querySelector("#saturdayLunch").value);
-
-    var sundayLunch = Number(document.querySelector("#sundayLunch").value);
-
+    var sundayLunch =
+        Number(document.querySelector("#sundayLunch").value);
 
     var totalStudyHours =
         mondayHours +
@@ -44,9 +57,8 @@ function calculateResult(){
         saturdayHours +
         sundayHours;
 
-
-    var averageStudyHours = totalStudyHours / 7;
-
+    var averageStudyHours =
+        totalStudyHours / 7;
 
     var totalLunchExpense =
         mondayLunch +
@@ -57,9 +69,8 @@ function calculateResult(){
         saturdayLunch +
         sundayLunch;
 
-
-    var averageLunchExpense = totalLunchExpense / 7;
-
+    var averageLunchExpense =
+        totalLunchExpense / 7;
 
     document.querySelector("#totalStudyHours").innerHTML =
         totalStudyHours;
@@ -73,7 +84,6 @@ function calculateResult(){
     document.querySelector("#averageLunchExpense").innerHTML =
         averageLunchExpense.toFixed(2);
 
-
     if(totalStudyHours >= studyGoal){
 
         document.querySelector("#studyMessage").innerHTML =
@@ -85,7 +95,6 @@ function calculateResult(){
             "You did not reach your weekly study goal.";
 
     }
-
 
     if(totalLunchExpense <= lunchBudget){
 
@@ -101,13 +110,11 @@ function calculateResult(){
 
 }
 
-
 function clearResult(){
 
     document.querySelector("#studyGoal").value = "";
 
     document.querySelector("#lunchBudget").value = "";
-
 
     document.querySelector("#mondayHours").value = "";
 
@@ -123,7 +130,6 @@ function clearResult(){
 
     document.querySelector("#sundayHours").value = "";
 
-
     document.querySelector("#mondayLunch").value = "";
 
     document.querySelector("#tuesdayLunch").value = "";
@@ -138,7 +144,6 @@ function clearResult(){
 
     document.querySelector("#sundayLunch").value = "";
 
-
     document.querySelector("#totalStudyHours").innerHTML = "0";
 
     document.querySelector("#averageStudyHours").innerHTML = "0";
@@ -147,9 +152,18 @@ function clearResult(){
 
     document.querySelector("#averageLunchExpense").innerHTML = "0";
 
-
     document.querySelector("#studyMessage").innerHTML = "";
 
     document.querySelector("#lunchMessage").innerHTML = "";
 
 }
+
+document.querySelector("#calculateButton").addEventListener(
+    "click",
+    calculateResult
+);
+
+document.querySelector("#clearButton").addEventListener(
+    "click",
+    clearResult
+);

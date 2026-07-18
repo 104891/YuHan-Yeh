@@ -8,49 +8,39 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <script src="script.js"></script>
-
 </head>
 
 <body>
 
-<table border="1" width="800" align="center">
+<div class="website">
 
-    <tr>
+    <header class="header">
 
-        <th colspan="3" class="header">
+        <h1>Study Tracking for Students</h1>
 
-            <h1>Study Tracking for Students</h1>
+    </header>
 
-        </th>
+    <nav class="nav">
 
-    </tr>
+        <h2>
 
-    <tr class="nav">
+            <a href="index.html">HOME</a>
 
-        <th colspan="3">
+            |
 
-            <h2>
+            <a href="portfolio.html">PORTFOLIO</a>
 
-                <a href="index.html">HOME</a>
+            |
 
-                |
+            <a href="trivia.html">TRIVIA</a>
 
-                <a href="portfolio.html">PORTFOLIO</a>
+        </h2>
 
-                |
+    </nav>
 
-                <a href="trivia.html">TRIVIA</a>
+    <main class="page-content">
 
-            </h2>
-
-        </th>
-
-    </tr>
-
-    <tr class="content">
-
-        <td width="180" valign="top">
+        <aside class="left-column">
 
             <h2>Useful Links</h2>
 
@@ -76,9 +66,9 @@
 
             </ul>
 
-        </td>
+        </aside>
 
-        <td width="440" valign="top">
+        <section class="middle-column">
 
             <h2>Weekly Study Calculator</h2>
 
@@ -108,7 +98,7 @@
 
             </p>
 
-            <table border="1" width="100%">
+            <table class="data-table">
 
                 <tr>
 
@@ -222,11 +212,11 @@
 
             <br>
 
-            <button onclick="calculateResult()">
+            <button id="calculateButton">
                 Calculate
             </button>
 
-            <button onclick="clearResult()">
+            <button id="clearButton">
                 Clear
             </button>
 
@@ -256,9 +246,9 @@
 
             <p id="lunchMessage"></p>
 
-        </td>
+        </section>
 
-        <td width="180" valign="top">
+        <aside class="right-column">
 
             <h2>Instructions</h2>
 
@@ -278,21 +268,19 @@
                 Click Clear to remove all information.
             </p>
 
-        </td>
+        </aside>
 
-    </tr>
+    </main>
 
-    <tr>
+    <footer class="footer">
 
-        <th colspan="3" class="footer">
+        <h2>Study Tracking for Students</h2>
 
-            <h2>Study Tracking for Students</h2>
+    </footer>
 
-        </th>
+</div>
 
-    </tr>
-
-</table>
+<script src="script.js"></script>
 
 </body>
 
